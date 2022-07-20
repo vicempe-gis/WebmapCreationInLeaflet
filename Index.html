@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejemplo de mapa desarrollado con Leaflet</title>     
+    <title>Entre Rios</title>     
     
     <!-- Enlace a hoja CSS de Leaflet -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
@@ -15,7 +15,7 @@
 
   </head>
 <body>
-    <h1>Ejemplo de mapa desarrollado con Leaflet</h1>     
+    <h1>Entre Rios</h1>     
     
     <!-- Elemento div para contener el mapa Leaflet -->
     <div id="mapid" style="height: 800px; width: 800px;"></div>
@@ -76,7 +76,7 @@
 
           // Marcadores
                    
-          parana = L.marker([-31.744025, -60.513933], {icon: L.divIcon({html:'<i class="fa-brands fa-android"></i>'})});
+          parana = L.marker([-31.744025, -60.513933]); // {icon: L.divIcon({html:'<i class="fa-brands fa-android"></i>'})});
           parana.bindTooltip("Paraná").openTooltip();
           parana.bindPopup("<h1>Paraná</h1> <a href='https://es.wikipedia.org/wiki/Paraná_(Argentina)'>Wikipedia</a>").openPopup();
           parana.addTo(mapa);
